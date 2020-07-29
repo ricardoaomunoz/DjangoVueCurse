@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'comment',
     'rest_framework',
     'corsheaders',
+    'bootstrapform'
 ]
 
 MIDDLEWARE = [

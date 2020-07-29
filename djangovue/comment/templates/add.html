@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    {{ form.text }}
+    <form action="{% url 'add'%}" method="post">
+        {%csrf_token%}
+        {{ form.text }}
+        
+        <input type="submit" value="Enviar">
+    </form>
+    
     
 </body>
 </html>
